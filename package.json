@@ -14,7 +14,8 @@
   },
   "dependencies": {
     "react": "18.2.0",
-    "react-native": "0.72.4"
+    "react-native": "0.72.4",
+    "styled-components": "^6.0.7"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
@@ -27,6 +28,7 @@
     "@types/jest": "^29.5.4",
     "@types/react": "^18.0.24",
     "@types/react-test-renderer": "^18.0.0",
+    "@types/styled-components-react-native": "^5.2.1",
     "@typescript-eslint/eslint-plugin": "^6.5.0",
     "@typescript-eslint/parser": "^6.5.0",
     "babel-eslint": "^10.1.0",
@@ -48,7 +50,11 @@
     "react-test-renderer": "18.2.0",
     "typescript": "4.8.4"
   },
+  "jest": {
+    "preset": "react-native"
+  },
   "engines": {
     "node": ">=16"
-  }
+  },
+  "pre-commit": "lint"
 }
